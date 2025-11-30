@@ -1,0 +1,40 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav

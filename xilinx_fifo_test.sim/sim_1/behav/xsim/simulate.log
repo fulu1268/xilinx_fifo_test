@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Failure: =========================================
+Time: 102905 ns  Iteration: 0  Process: /fifo_test_top_tb/compare_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 102905 ns : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 170
