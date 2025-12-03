@@ -1,11 +1,12 @@
 open_proj xilinx_fifo_test.xpr
-set run_name impl_1
-set cpu_count 4
-reset_runs $run_name
-launch_runs $run_name -jobs $cpu_count
-wait_on_run $run_name
-set status [get_property STATUS [get_runs $run_name]]
-if {$status != "route_design Complete!"} {
-exit 1
-}
-exit 0
+
+set sim_fileset sim_1 
+launch_simulation -simset [get_filesets $sim_fileset]
+run 1 ms
+close_sim
+
+# Look for assertion failures in the simulation log
+set log_file [glob *sim/$sim_fileset/behav/xsim/simulate.log]
+set fp [open $log_file]
+set file_data [read $fp]
+exit [regex "Failure:" $file_data]0
