@@ -24,8 +24,8 @@ architecture bench of fifo_test_top_tb is
 
   -- Constant
   constant clk_period        : time    := 10 ns;
-  constant c_read_file_name  : string  := ".\xilinx_fifo_test.srcs\sim_1\new\input.csv";
-  constant c_write_file_name : string  := ".\xilinx_fifo_test.srcs\sim_1\new\output.csv";
+  constant c_read_file_name  : string  := "./input.csv";
+  constant c_write_file_name : string  := "./output.csv";
   constant c_data_width      : integer := 8;
   constant c_fifo_r_line_num : integer := 4080;
   constant c_fifo_w_line_num : integer := 63;

@@ -2,7 +2,7 @@
 open_proj xilinx_fifo_test.xpr
 
 # 2. Save the current directory
-cd $orgin_dir
+# cd $orgin_dir
 
 # 3. launch simulation
 set sim_fileset sim_1 
