@@ -24,8 +24,8 @@ architecture bench of fifo_test_top_tb is
 
   -- Constant
   constant clk_period        : time    := 10 ns;
-  constant c_read_file_name  : string  := ".\input.csv";
-  constant c_write_file_name : string  := ".\output.csv";
+  constant c_read_file_name  : string  := "xilinx_fifo_test.srcs\sim_1\new\input.csv";
+  constant c_write_file_name : string  := "xilinx_fifo_test.srcs\sim_1\new\output.csv";
   constant c_data_width      : integer := 8;
   constant c_fifo_r_line_num : integer := 4080;
   constant c_fifo_w_line_num : integer := 63;
@@ -66,6 +66,9 @@ begin
     wait until reset = '1';
 
     file_open(f_status, r_fp, c_read_file_name, read_mode);
+    if f_status /= open_ok then
+        assert false report "TB ERROR: Cannot open input.csv" severity failure;
+    end if;
 
     while not endfile(r_fp) loop
       wait until rising_edge(clk);
@@ -96,6 +99,9 @@ begin
     wait until reset = '1';
 
     file_open (f_status, w_fp, c_write_file_name, write_mode);
+    if f_status /= open_ok then
+        assert false report "TB ERROR: Cannot open output.csv" severity failure;
+    end if;
 
     -- 1019 < 1020
     while(i_write_line_cnt < c_fifo_w_line_num) loop
