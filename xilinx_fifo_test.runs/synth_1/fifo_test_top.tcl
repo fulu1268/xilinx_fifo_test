@@ -70,10 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/yeha1518/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-22828-DESKTOP-DSRKBDS/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 5
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xcku035-ffva1156-1LV-i
 
@@ -104,7 +101,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/constrs_2/new/xilinx_fifo_test_xdc.xdc
+set_property used_in_implementation false [get_files C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/constrs_2/new/xilinx_fifo_test_xdc.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/utils_1/imports/synth_1/fifo_test_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
