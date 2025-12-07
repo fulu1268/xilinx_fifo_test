@@ -1,5 +1,5 @@
 # 1. Vivado project setup
-# open_proj xilinx_fifo_test.xpr
+open_proj xilinx_fifo_test.xpr
 
 # 2. launch simulation
 set sim_fileset sim_1 
