@@ -425,3 +425,851 @@ Time: 0 ps  Iteration: 0
 Failure: TB ERROR: Cannot open input.csv
 Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
 $finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1608.449 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 ms
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1608.449 ; gain = 0.000
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 ms
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1608.449 ; gain = 0.000
+run 1 ms
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1608.746 ; gain = 0.297
+restart
+INFO: [Wavedata 42-604] Simulation restarted
+run 1 ms
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1609.969 ; gain = 1.223
+run 1 ms
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1611.098 ; gain = 1.129
+run 1 ms
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fifo_test_top_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package fifo_generator_v13_2_9.fifo_generator_v13_2_9_pkg
+Compiling package xpm.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture fifo18e2_v of entity unisim.FIFO18E2 [\FIFO18E2(clock_domains="COMMON"...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_prim [\builtin_prim(c_din_width=32,c_d...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_extdepth [\builtin_extdepth(c_family="8SER...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.builtin_top [\builtin_top(c_family="8SERIES",...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.input_blk [\input_blk(c_din_width=32,c_pktf...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.output_blk [\output_blk(c_dout_width=32,c_pk...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_builtin [\fifo_generator_v13_2_9_builtin(...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_top [\fifo_generator_top(c_family="vi...]
+Compiling architecture amd of entity fifo_generator_v13_2_9.fifo_generator_v13_2_9_synth [\fifo_generator_v13_2_9_synth(c_...]
+Compiling module xil_defaultlib.fifo_generator_0
+Compiling architecture behavioral of entity xil_defaultlib.fifo_test_top [fifo_test_top_default]
+Compiling architecture bench of entity xil_defaultlib.fifo_test_top_tb
+Built simulation snapshot fifo_test_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+# run 1000ns
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1613.164 ; gain = 2.066
+run 1 ms
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+# open_proj xilinx_fifo_test.xpr
+ERROR: [Coretcl 2-101] Project 'xilinx_fifo_test.xpr' is already open.
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+# if {![info exists origin_dir]} {
+#     set origin_dir [pwd]
+# }
+can't read "orgin_dir": no such variable
+    while executing
+"cd $orgin_dir"
+    (file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl" line 9)
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+# if {![info exists origin_dir]} {
+#     set origin_dir [pwd]
+# }
+can't read "orgin_dir": no such variable
+    while executing
+"cd $orgin_dir"
+    (file "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl" line 9)
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+# if {![info exists origin_dir]} {
+#     set origin_dir [pwd]
+# }
+# cd $origin_dir
+# set sim_fileset sim_1 
+# launch_simulation -simset [get_filesets $sim_fileset]
+Command: launch_simulation  -simset sim_1
+INFO: [Vivado 12-12493] Simulation top is 'fifo_test_top_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2023.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'fifo_test_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj fifo_test_top_tb_vlog.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+"xvhdl --incr --relax -prj fifo_test_top_tb_vhdl.prj"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log"
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_9 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_test_top_tb_behav xil_defaultlib.fifo_test_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "fifo_test_top_tb_behav -key {Behavioral:sim_1:Functional:fifo_test_top_tb} -tclbatch {fifo_test_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source fifo_test_top_tb.tcl
+## current_wave_config
+WARNING: Simulation object /fifo_test_top_tb/r_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+WARNING: Simulation object /fifo_test_top_tb/w_fp was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of VHDL variables.
+Note: Actual FIFO Depth = 512
+Time: 0 ps  Iteration: 0
+Note:  DEPTH = 512 WIDTH = 36 C_RD_PRIM_WIDTH = 36 C_RD_PRIM_DEPTH = 512 DEEP = 1 WIDE = 1
+Time: 0 ps  Iteration: 0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'fifo_test_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1618.984 ; gain = 5.820
+# run 1 ms
+Failure: TB ERROR: Cannot open input.csv
+Time: 100 us  Iteration: 0  Process: /fifo_test_top_tb/read_file  File: C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd
+$finish called at time : 100 us : File "C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/xilinx_fifo_test.srcs/sim_1/new/fifo_test_top_tb.vhd" Line 70
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# set log_file [glob *sim/$sim_fileset/behav/xsim/simulate.log]
+# set fp [open $log_file]
+# set file_data [read $fp]
+# exit [regex "Failure:" $file_data]0
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  6 23:57:52 2025...

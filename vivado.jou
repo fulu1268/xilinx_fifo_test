@@ -32,3 +32,40 @@ launch_simulation
 source fifo_test_top_tb.tcl
 restart
 run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+restart
+run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+restart
+run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+restart
+run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+run 1 ms
+close_sim
+launch_simulation
+source fifo_test_top_tb.tcl
+run 1 ms
+close_sim
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+source C:/Users/yeha1518/dev/hdl/xilinx_fifo_test/run_simulation.tcl
+source fifo_test_top_tb.tcl
