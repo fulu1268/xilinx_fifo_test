@@ -1,5 +1,7 @@
 open_proj xilinx_fifo_test.xpr
 
+reset_project
+
 set run_name synth_1
 set cpu_count 4
 reset_runs $run_name
