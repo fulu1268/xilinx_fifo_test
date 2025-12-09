@@ -6,7 +6,7 @@ pipeline {
     // }
 
     options {
-        // 병렬 빌드 금지 → 동일 Job은 항상 직렬 실행
+        // 병렬 빌드 금지 → 동일 Job은 항상 직렬실행
         disableConcurrentBuilds()
         timestamps()
     }
