@@ -67,5 +67,5 @@
 !*.elf
 !*.bmm
 !*.xmp
-
+!Jenkinsfile
 # End of https://www.toptal.com/developers/gitignore/api/vivado
